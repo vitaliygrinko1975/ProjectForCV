@@ -1,6 +1,9 @@
 package ua.hrynko.projectcv.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.security.core.GrantedAuthority;
+//import org.springframework.security.core.context.SecurityContextHolder;
+//import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -52,13 +55,13 @@ public class AppController {
     @PostMapping("/forRegistered")
     public ModelAndView forRegistered() {
         ModelAndView model = new ModelAndView();
-//        List<Users> users = userService.getAll();
-//            model.addObject("users", users);
-//        model.setViewName("admin_page_users");
+        List<Users> userList = userService.getAll();
+            model.addObject("userList", userList);
+        model.setViewName("admin_page_users");
 
-        List<Cars> carsItems = mySqlCarsDAO.findCars();
-            model.addObject("carsItems", carsItems);
-            model.setViewName("client_page_list_car");
+//        List<Cars> carsItems = mySqlCarsDAO.findCars();
+//            model.addObject("carsItems", carsItems);
+//            model.setViewName("client_page_list_car");
 
         return model;
 
@@ -120,17 +123,17 @@ public class AppController {
 //    }
 
 
-//    private boolean hasRole(String role) {
-//        Collection<GrantedAuthority> authorities = (Collection<GrantedAuthority>)
-//                SecurityContextHolder.getContext().getAuthentication().getAuthorities();
-//        boolean hasRole = false;
-//        for (GrantedAuthority authority : authorities) {
-//            hasRole = authority.getAuthority().equals(role);
-//            if (hasRole) {
-//                break;
-//            }
-//        }
-//        return hasRole;
-//    }
+    private boolean hasRole(String role) {
+        Collection<GrantedAuthority> authorities = (Collection<GrantedAuthority>)
+                SecurityContextHolder.getContext().getAuthentication().getAuthorities();
+        boolean hasRole = false;
+        for (GrantedAuthority authority : authorities) {
+            hasRole = authority.getAuthority().equals(role);
+            if (hasRole) {
+                break;
+            }
+        }
+        return hasRole;
+    }
 
 }

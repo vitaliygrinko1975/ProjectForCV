@@ -9,11 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5215367d-4e8e-413b-8328-4c456febb37a" name="Changes" comment="" />
+    <list default="true" id="5215367d-4e8e-413b-8328-4c456febb37a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/config/MyWebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/config/MyWebAppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/controllers/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/controllers/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/models/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/models/Users.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -47,6 +61,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1z8DfVadK3eVzHLfyTabZ4UOw27" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,7 +71,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -66,6 +81,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\РАБОТА\SoftServe\ProjectHibernateSpring\src\main\resources" />
       <recent name="D:\РАБОТА\SoftServe\ProjectHibernateSpring" />
       <recent name="D:\РАБОТА\SoftServe\ProjectHibernateSpring\src" />
     </key>
@@ -224,7 +240,17 @@
       <workItem from="1633604184053" duration="2992000" />
       <workItem from="1633607277110" duration="453000" />
       <workItem from="1633607771550" duration="1307000" />
-      <workItem from="1633671478156" duration="7352000" />
+      <workItem from="1633671478156" duration="8887000" />
+      <workItem from="1633682956827" duration="39000" />
+      <workItem from="1633683008842" duration="1432000" />
+      <workItem from="1633687024026" duration="276000" />
+      <workItem from="1633938421537" duration="2293000" />
+      <workItem from="1633941003586" duration="307000" />
+      <workItem from="1633941323420" duration="254000" />
+      <workItem from="1633941604149" duration="49000" />
+      <workItem from="1633941847995" duration="212000" />
+      <workItem from="1633942089794" duration="563000" />
+      <workItem from="1633942670045" duration="4938000" />
     </task>
     <servers />
   </component>

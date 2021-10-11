@@ -45,7 +45,6 @@ public class Users implements Serializable {
     @JoinColumn(name = "role_id", nullable = false)
     private Roles role;
 
-
     public int getId() {
         return id;
     }

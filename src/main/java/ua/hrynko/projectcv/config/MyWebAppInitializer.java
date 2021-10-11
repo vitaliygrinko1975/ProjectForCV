@@ -8,8 +8,8 @@ public class MyWebAppInitializer
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return null;
-       // return new Class[]{AppConfig.class, SecurityConfig.class};
+//        return null;
+        return new Class[]{AppConfig.class, SecurityConfig.class};
     }
 
     @Override
