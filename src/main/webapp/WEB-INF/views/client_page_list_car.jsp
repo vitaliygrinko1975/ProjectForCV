@@ -66,8 +66,8 @@
         </c:forEach>
     </table>
                     <div class='mydiv'>
-                        <form method='post' action="  ">
-                            <input type="hidden" name="command" value="selectByClass"/>
+                        <form method='post' action="selectByClass">
+                            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                             Car class: <input type='text' name='selectClass'   required='required'/>
                             <button type='submit' name = 'Butt' value = '0' class='btn btn-primary btn-block btn-large'>ENTER</button>
                         </form>

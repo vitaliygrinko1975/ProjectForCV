@@ -8,6 +8,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import ua.hrynko.projectcv.db.dao.MySqlCarsDAO;
@@ -94,6 +95,7 @@ public class AppController {
 
         return model;
     }
+
     @GetMapping("/sortedDownPrice")
     public ModelAndView sortedDownPrice() {
         ModelAndView model = new ModelAndView();
@@ -125,6 +127,12 @@ public class AppController {
         return model;
     }
 
+    @PostMapping("/selectByClass")
+    public String createOrUpdateUser(@RequestParam("selectClass") String selectClass,
+                                     ModelMap model) {
+        List<Cars> carsItems = mySqlCarsDAO.selectCarsByCategory(selectClass);
+        model.addAttribute("carsItems", carsItems);
+        return "client_page_list_car";
 
 
 //    @PostMapping("/create_update")
@@ -166,17 +174,18 @@ public class AppController {
 //    }
 
 
-    private boolean hasRole(String role) {
-        Collection<GrantedAuthority> authorities = (Collection<GrantedAuthority>)
-                SecurityContextHolder.getContext().getAuthentication().getAuthorities();
-        boolean hasRole = false;
-        for (GrantedAuthority authority : authorities) {
-            hasRole = authority.getAuthority().equals(role);
-            if (hasRole) {
-                break;
-            }
-        }
-        return hasRole;
-    }
+//    private boolean hasRole(String role) {
+//        Collection<GrantedAuthority> authorities = (Collection<GrantedAuthority>)
+//                SecurityContextHolder.getContext().getAuthentication().getAuthorities();
+//        boolean hasRole = false;
+//        for (GrantedAuthority authority : authorities) {
+//            hasRole = authority.getAuthority().equals(role);
+//            if (hasRole) {
+//                break;
+//            }
+//        }
+//        return hasRole;
+//    }
 
+    }
 }
