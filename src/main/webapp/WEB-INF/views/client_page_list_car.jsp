@@ -8,7 +8,7 @@
 <body>
 <div align='right'>
     <div style="display: inline-block; padding-right: 50px;">
-        <a href="loginPage">
+        <a href="welcome">
             <button  class="btn btn-primary btn-block btn-large">Log out</button>
         </a>
     </div>
@@ -18,25 +18,25 @@
     <caption><h2>Cars</h2></caption>
         <div align='center'>
             <div style="display: inline-block; padding-right: 50px;">
-                <a href="controller?command=sortedUpPrice">
+                <a href="sortedUpPrice">
                     <button  class="btn btn-primary btn-block btn-large">Sort by price ></button>
                 </a>
             </div>
             <div align='center'>
                 <div style="display: inline-block; padding-right: 50px;">
-                    <a href="controller?command=sortedDownPrice">
+                    <a href="sortedDownPrice">
                         <button  class="btn btn-primary btn-block btn-large">Sort by price <</button>
                     </a>
                 </div>
             <div align='center'>
                 <div style="display: inline-block; padding-right: 50px;">
-                    <a href="controller?command=sortedUpName">
+                    <a href="sortedUpName">
                         <button  class="btn btn-primary btn-block btn-large">Sort by name ></button>
                     </a>
                 </div>
                 <div align='center'>
                     <div style="display: inline-block; padding-right: 50px;">
-                        <a href="controller?command=sortedDownName">
+                        <a href="sortedDownName">
                             <button  class="btn btn-primary btn-block btn-large">Sort by name <</button>
                         </a>
                     </div>
@@ -76,9 +76,3 @@
             </body>
 </html>
 
-
-<%--<div align='center'  style="display: inline-block;">--%>
-<%--<a href="controller?command=addpage">--%>
-<%--<button  class="btn btn-primary btn-block btn-large">Add new car</button>--%>
-<%--</a>--%>
-<%--</div>--%>

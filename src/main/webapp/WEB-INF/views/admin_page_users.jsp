@@ -37,7 +37,7 @@
                 <td>${user.password}</td>
                 <td>${user.firstName}</td>
                 <td>${user.lastName}</td>
-                <td>${user.roleId}</td>
+                <td>${user.role.id}</td>
             </tr>
         </c:forEach>
     </table>

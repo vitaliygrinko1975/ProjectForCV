@@ -19,6 +19,8 @@ import ua.hrynko.projectcv.servise.interfaces.UserService;
 import java.util.Collection;
 import java.util.List;
 
+import static java.util.Collections.sort;
+
 
 @Controller
 public class AppController {
@@ -55,13 +57,13 @@ public class AppController {
     @PostMapping("/forRegistered")
     public ModelAndView forRegistered() {
         ModelAndView model = new ModelAndView();
-        List<Users> userList = userService.getAll();
-            model.addObject("userList", userList);
-        model.setViewName("admin_page_users");
+//        List<Users> userList = userService.getAll();
+//            model.addObject("userList", userList);
+//        model.setViewName("admin_page_users");
 
-//        List<Cars> carsItems = mySqlCarsDAO.findCars();
-//            model.addObject("carsItems", carsItems);
-//            model.setViewName("client_page_list_car");
+        List<Cars> carsItems = mySqlCarsDAO.findCars();
+        model.addObject("carsItems", carsItems);
+        model.setViewName("client_page_list_car");
 
         return model;
 
@@ -80,6 +82,47 @@ public class AppController {
 //            model.setViewName("welcome");
 //        }
 //        return model;
+    }
+
+    @GetMapping("/sortedUpPrice")
+    public ModelAndView sortedUpPrice() {
+        ModelAndView model = new ModelAndView();
+        List<Cars> carsItems = mySqlCarsDAO.findCars();
+        sort(carsItems, (o1, o2) -> (int) (o1.getPrice() - o2.getPrice()));
+        model.addObject("carsItems", carsItems);
+        model.setViewName("client_page_list_car");
+
+        return model;
+    }
+    @GetMapping("/sortedDownPrice")
+    public ModelAndView sortedDownPrice() {
+        ModelAndView model = new ModelAndView();
+        List<Cars> carsItems = mySqlCarsDAO.findCars();
+        carsItems.sort((o1, o2) -> (int) (o2.getPrice() - o1.getPrice()));
+        model.addObject("carsItems", carsItems);
+        model.setViewName("client_page_list_car");
+
+        return model;
+    }
+
+    @GetMapping("/sortedUpName")
+    public ModelAndView sortedUpName() {
+        ModelAndView model = new ModelAndView();
+        List<Cars> carsItems = mySqlCarsDAO.findCarSortedUpByName();
+        model.addObject("carsItems", carsItems);
+        model.setViewName("client_page_list_car");
+
+        return model;
+    }
+
+    @GetMapping("/sortedDownName")
+    public ModelAndView sortedDownName() {
+        ModelAndView model = new ModelAndView();
+        List<Cars> carsItems = mySqlCarsDAO.findCarSortedDownByName();
+        model.addObject("carsItems", carsItems);
+        model.setViewName("client_page_list_car");
+
+        return model;
     }
 
 

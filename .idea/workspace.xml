@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5215367d-4e8e-413b-8328-4c456febb37a" name="Changes" comment="">
+    <list default="true" id="5215367d-4e8e-413b-8328-4c456febb37a" name="Changes" comment="initial 8">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values.at" afterDir="false" />
@@ -17,9 +19,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/config/MyWebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/config/MyWebAppInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/controllers/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/controllers/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/models/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/models/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dbcreate-mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dbcreate-mysql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_users.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/client_page_list_car.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/client_page_list_car.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ua/hrynko/project/servise/UserServiceImpTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/db.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +77,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Nix/v2.patch" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -126,8 +132,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ua.hrynko.project.servise in ProjectForCV" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectForCV" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.hrynko.project.servise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.hrynko.project.servise" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.52" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.52" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ProjectForCV_war_exploded/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/ProjectForCV_war_exploded/" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -139,6 +159,8 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="940b973c-6e72-45b3-b011-b7855f3d66c7" />
+        <option name="HTTP_PORT" value="8081" />
+        <option name="JNDI_PORT" value="1098" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -215,10 +237,18 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.All in ProjectForCV" />
+      <item itemvalue="JUnit.UserServiceImpTest" />
+      <item itemvalue="JUnit.UserServiceImpTest.testGetById" />
+      <item itemvalue="JUnit.ua.hrynko.project.servise in ProjectForCV" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.52" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in ProjectForCV" />
         <item itemvalue="JUnit.UserServiceImpTest" />
+        <item itemvalue="JUnit.ua.hrynko.project.servise in ProjectForCV" />
+        <item itemvalue="JUnit.All in ProjectForCV" />
         <item itemvalue="JUnit.UserServiceImpTest.testGetById" />
       </list>
     </recent_temporary>
@@ -251,10 +281,32 @@
       <workItem from="1633941847995" duration="212000" />
       <workItem from="1633942089794" duration="563000" />
       <workItem from="1633942670045" duration="4938000" />
+      <workItem from="1633977136506" duration="621000" />
+      <workItem from="1634545552259" duration="269000" />
+      <workItem from="1634548427085" duration="305000" />
+      <workItem from="1634548844162" duration="378000" />
+      <workItem from="1634549285746" duration="578000" />
+      <workItem from="1634550315805" duration="92000" />
+      <workItem from="1634550480063" duration="1190000" />
+      <workItem from="1634551728004" duration="740000" />
+      <workItem from="1634621691080" duration="3265000" />
     </task>
+    <task id="LOCAL-00001" summary="initial 7">
+      <created>1633977267644</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633977267644</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial 7" />
+    <MESSAGE value="initial 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial 8" />
   </component>
 </project>

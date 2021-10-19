@@ -100,14 +100,15 @@ INSERT INTO cars VALUES(DEFAULT, 'Toyota Corolla', 100, 'C');
 -- each row of this table represents one cars item
 -- --------------------------------------------------------------
 CREATE TABLE orders_cars(
+                            id BIGINT NOT NULL auto_increment PRIMARY KEY,
                             order_id INTEGER NOT NULL REFERENCES orders(id),
                             car_id INTEGER NOT NULL REFERENCES cars (id)
 );
 
-INSERT INTO orders_cars VALUES(1, 1);
-INSERT INTO orders_cars VALUES(2, 2);
-INSERT INTO orders_cars VALUES(3, 3);
-INSERT INTO orders_cars VALUES(4, 4);
+INSERT INTO orders_cars VALUES(1, 1, 1);
+INSERT INTO orders_cars VALUES(2, 2, 2);
+INSERT INTO orders_cars VALUES(3, 3, 3);
+INSERT INTO orders_cars VALUES(4, 4, 4);
 -- --------------------------------------------------------------
 -- test database:
 -- --------------------------------------------------------------
