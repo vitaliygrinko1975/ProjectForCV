@@ -38,7 +38,7 @@ CREATE TABLE users(
                       login VARCHAR(20) NOT NULL UNIQUE,
 
 -- not null string columns
-                      password VARCHAR(20) NOT NULL,
+                      password VARCHAR(255) NOT NULL,
                       first_name VARCHAR(20) NOT NULL,
                       last_name VARCHAR(20) NOT NULL,
 
@@ -59,9 +59,9 @@ CREATE TABLE users(
 );
 
 -- id = 1
-INSERT INTO users VALUES(DEFAULT, 'admin', 'admin', 'Ivan', 'Ivanov', 1);
+INSERT INTO users VALUES(DEFAULT, 'admin', '$2a$10$y3mvWzqGZ6knuvsRkgH9nOyBigfnmcR6adbjmUIe6tNixLcBgIDRS', 'Ivan', 'Ivanov', 1);
 -- id = 2
-INSERT INTO users VALUES(DEFAULT, 'client', 'client', 'Petr', 'Petrov', 2);
+INSERT INTO users VALUES(DEFAULT, 'user', '$2a$10$k8PaITNkwNMSV2VVHQyZ6O/5uAuz/atRgbyenaaRgwrEWpiq7i6km', 'Petr', 'Petrov', 2);
 
 -- --------------------------------------------------------------
 -- ORDERS

@@ -9,7 +9,7 @@
 <body>
 <div align='right'>
     <div style="display: inline-block; padding-right: 50px;">
-        <a href="controller?command=logout">
+        <a href="login?logout">
             <button  class="btn btn-primary btn-block btn-large">Log out</button>
         </a>
     </div>

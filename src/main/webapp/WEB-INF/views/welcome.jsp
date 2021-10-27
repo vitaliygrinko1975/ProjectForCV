@@ -9,7 +9,7 @@
 <body>
 <div align='right'>
     <div style="display: inline-block; padding-right: 50px;">
-        <a href="login">
+        <a href="forRegistered">
             <button class="btn btn-primary btn-block btn-large">FOR REGISTERED</button>
         </a>
     </div>

@@ -49,11 +49,10 @@ public class UserServiceImp implements UserService{
     public void delete(Users obj) {mySqlUsersDAO.delete(obj);
     }
 
-    @Transactional//(readOnly = true)
     @Override
     public Users getById(int id) {return mySqlUsersDAO.getById(id);}
 
-    @Transactional//(readOnly = true)
+    @Transactional(readOnly = true)
     @Override
     public List<Users> getAll() {
         return mySqlUsersDAO.getAll();

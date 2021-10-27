@@ -7,6 +7,7 @@ import org.hibernate.criterion.Restrictions;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 import ua.hrynko.projectcv.db.dao.interfaces.UserDAO;
+import ua.hrynko.projectcv.db.models.Roles;
 import ua.hrynko.projectcv.db.models.Users;
 
 import javax.persistence.Entity;
@@ -23,11 +24,13 @@ public class MySqlUsersDAO extends MySqlAbstractDAO<Users>  implements UserDAO {
 
     public void addClientToUsersDb(String login, String password, String firstName, String lastName) {
         Users user = new Users();
+        Roles role = new Roles();
+        role.setId(2);
         user.setLogin(login);
         user.setPassword(password);
         user.setFirstName(firstName);
         user.setLastName(lastName);
-//        user.setRoleId(2);
+        user.setRole(role);
         Session session = sessionFactory.getCurrentSession();
         Transaction t = session.getTransaction();
         t.begin();

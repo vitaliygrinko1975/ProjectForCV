@@ -9,13 +9,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5215367d-4e8e-413b-8328-4c456febb37a" name="Changes" comment="">
+    <list default="true" id="5215367d-4e8e-413b-8328-4c456febb37a" name="Changes" comment="initial 9">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/403.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/controllers/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/controllers/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/dao/MySqlUsersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/dao/MySqlUsersDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/servise/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/servise/MyUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/servise/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/servise/UserServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_add_car.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_add_car.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_add_new_admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_add_new_admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_update_car.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_update_car.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_users.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/client_page_list_car.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/client_page_list_car.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/client_page_to_pay.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/client_page_to_pay.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error_page.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list_car_order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list_car_order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/welcome.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +86,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Nix/v2.patch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -77,6 +96,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\РАБОТА\SoftServe\ProjectHibernateSpring\src\main\webapp\WEB-INF\views" />
       <recent name="D:\РАБОТА\SoftServe\ProjectHibernateSpring\src\main\resources" />
       <recent name="D:\РАБОТА\SoftServe\ProjectHibernateSpring" />
       <recent name="D:\РАБОТА\SoftServe\ProjectHibernateSpring\src" />
@@ -279,7 +299,12 @@
       <workItem from="1634550315805" duration="92000" />
       <workItem from="1634550480063" duration="1190000" />
       <workItem from="1634551728004" duration="740000" />
-      <workItem from="1634621691080" duration="7136000" />
+      <workItem from="1634621691080" duration="11840000" />
+      <workItem from="1634639714177" duration="3195000" />
+      <workItem from="1634881297724" duration="10370000" />
+      <workItem from="1634892406371" duration="3874000" />
+      <workItem from="1635142183390" duration="10754000" />
+      <workItem from="1635314119374" duration="10540000" />
     </task>
     <task id="LOCAL-00001" summary="initial 7">
       <created>1633977267644</created>
@@ -295,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634625121123</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial 9">
+      <created>1634629840684</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634629840684</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +336,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial 7" />
     <MESSAGE value="initial 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial 8" />
+    <MESSAGE value="initial 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial 9" />
   </component>
 </project>

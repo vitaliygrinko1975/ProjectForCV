@@ -5,20 +5,20 @@
 <html>
 <head>
     <title>Admin</title>
-    <link href='./style/style2.css' rel='stylesheet' type='text/css'>
+    <link href="<c:url value="/resources/style/style2.css" />" rel="stylesheet">
 </head>
 <body>
 <div align='right'>
     <div style="display: inline-block; padding-right: 50px;">
-        <a href="controller?command=logout">
+        <a href="/welcome">
             <button  class="btn btn-primary btn-block btn-large">Log out</button>
         </a>
     </div>
 </div>
 <div class='mydiv'>
     <h1 align='center'>ORDERS</h1>
-    <form method='post' action="controller">
-        <input type="hidden" name="command" value="toPay"/>
+    <form method='post' action="toPay">
+        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
         DAYS: <input type='text' name='days'   required='required'/>
         Price: <input type='text' name='payPrice' value = ${car.price} >
         <button type='submit' name = 'ReturnButt' value = '0' class='btn btn-primary btn-block btn-large'>ENTER</button>

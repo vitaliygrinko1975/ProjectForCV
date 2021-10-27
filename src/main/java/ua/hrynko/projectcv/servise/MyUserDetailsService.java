@@ -29,7 +29,6 @@ public class MyUserDetailsService implements UserDetailsService {
 
         ua.hrynko.projectcv.db.models.Users user = mySqlUsersDAO.findUserByLogin(username);
         List<GrantedAuthority> authorities = buildUserAuthority(user.getRole());
-
         return buildUserForAuthentication(user, authorities);
     }
 

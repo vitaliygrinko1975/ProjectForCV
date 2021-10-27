@@ -9,8 +9,16 @@
 <body>
 <div align='right'>
     <div style="display: inline-block; padding-right: 50px;">
-        <a href="welcome">
+        <a href="login?logout">
             <button  class="btn btn-primary btn-block btn-large">Log out</button>
+        </a>
+    </div>
+</div>
+
+<div align='center'>
+    <div style="display: inline-block; padding-right: 50px;">
+        <a href="adminPageUsers">
+            <button  class="btn btn-primary btn-block btn-large">PAGE USER</button>
         </a>
     </div>
 </div>
@@ -36,15 +44,16 @@
                 <td>${car.name}</td>
                 <td>${car.price}</td>
                 <td>${car.category}</td>
-<%--                <td>--%>
-            <form method="post" action="controller">
-                <input type="hidden" name="command" value="removeCommand"/>
-                <button type="submit" name = "removeButt" value = "${car.id}"
+                <td>
+            <form method="post" action="removeCar">
+                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                 <button type="submit" name = "removeButt" value = "${car.id}"
                         class="btn btn-primary btn-block btn-large">Remove</button>
             </form>
                 </td>
                  <td>
                     <form method="post" action="controller">
+                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                         <input type="hidden" name="command" value="adminPageUpdateCommand"/>
                         <button type="submit" name = "carForUpdateButt" value = "${car.id}"
                                 class="btn btn-primary btn-block btn-large">Update</button>
