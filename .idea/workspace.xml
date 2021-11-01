@@ -16,12 +16,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/controllers/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/controllers/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_add_car.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_add_car.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_update_car.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_update_car.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/message.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/dao/MySqlCarsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/dao/MySqlCarsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/dao/interfaces/CarsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/dao/interfaces/CarsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_users.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/head.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list_menu.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/page.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/settings.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/taglib.jspf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,6 +301,7 @@
       <workItem from="1635401138928" duration="1038000" />
       <workItem from="1635501057612" duration="246000" />
       <workItem from="1635752393820" duration="6782000" />
+      <workItem from="1635764750050" duration="1429000" />
     </task>
     <task id="LOCAL-00001" summary="initial 7">
       <created>1633977267644</created>
@@ -333,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635332804821</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="initial 10">
+      <created>1635764781518</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1635764781518</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,6 +355,7 @@
     <MESSAGE value="initial 7" />
     <MESSAGE value="initial 8" />
     <MESSAGE value="initial 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial 9" />
+    <MESSAGE value="initial 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial 10" />
   </component>
 </project>

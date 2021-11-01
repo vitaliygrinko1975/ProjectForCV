@@ -22,10 +22,6 @@ public class MySqlCarsDAO extends MySqlAbstractDAO<Cars> implements CarsDAO {
     }
 
 
-    @Override
-    public void deleteCarToCarsDb(int id){
-        delete(getById(id));
-    }
 
     @Override
     public List<Cars> findCars(){
@@ -35,42 +31,7 @@ public class MySqlCarsDAO extends MySqlAbstractDAO<Cars> implements CarsDAO {
         }
     }
 
-    @Override
-    public void updateCarToCarsDb(int id, String name, int price, String category) {
-        Cars cars = new Cars();
-        cars.setId(id);
-        cars.setName(name);
-        cars.setPrice(price);
-        cars.setCategory(category);
-        Session session = sessionFactory.getCurrentSession();
-        Transaction t = session.getTransaction();
-        t.begin();
-        try {
-            session.saveOrUpdate(cars);
-        } catch (Exception e) {
-            t.rollback();
 
-        }
-        t.commit();
-    }
-
-    @Override
-    public void addCarToCarsDb(String name, int price, String category) {
-        Cars cars = new Cars();
-        cars.setName(name);
-        cars.setPrice(price);
-        cars.setCategory(category);
-        Session session = sessionFactory.getCurrentSession();
-        Transaction t = session.getTransaction();
-        t.begin();
-        try {
-            session.saveOrUpdate(cars);
-        } catch (Exception e) {
-            t.rollback();
-
-        }
-        t.commit();
-    }
 
     @Override
     public Cars findCarToCarsDb(int id)  throws NullPointerException{
