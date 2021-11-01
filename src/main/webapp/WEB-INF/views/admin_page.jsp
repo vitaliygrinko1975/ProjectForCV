@@ -47,15 +47,14 @@
                 <td>
             <form method="post" action="removeCar">
                 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-                 <button type="submit" name = "removeButt" value = "${car.id}"
+                 <button type="submit" name = "removeCarButt" value = "${car.id}"
                         class="btn btn-primary btn-block btn-large">Remove</button>
             </form>
                 </td>
                  <td>
-                    <form method="post" action="controller">
+                    <form method="get" action="adminPageUpdateCar">
                         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-                        <input type="hidden" name="command" value="adminPageUpdateCommand"/>
-                        <button type="submit" name = "carForUpdateButt" value = "${car.id}"
+                        <button type="submit" name = "updateCarButt" value = "${car.id}"
                                 class="btn btn-primary btn-block btn-large">Update</button>
                     </form>
 
@@ -65,7 +64,7 @@
     </table>
 
     <div align='center'  style="display: inline-block;">
-        <a href="controller?command=addPage">
+        <a href="adminPageAddCar">
             <button  class="btn btn-primary btn-block btn-large">Add new car</button>
         </a>
     </div>

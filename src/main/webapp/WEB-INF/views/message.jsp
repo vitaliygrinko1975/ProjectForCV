@@ -7,17 +7,15 @@
 	<link href="<c:url value="/resources/style/style2.css" />" rel="stylesheet">
 </head>
 <body>
-	<div class='mydiv'>
-        <h1 align='center'>${message}</h1>
-	</div>
+<div class='mydiv'>
+	<h1 align='center'>${message}</h1>
+	<form method='get' action='welcome'>
+		<button type='submit' class='btn btn-primary btn-block btn-large'>Return</button>
+		<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+	</form>
 
-	<div align='center'>
-		<div style="display: inline-block; padding-right: 50px;">
-			<a href="welcome">
-				<button  class="btn btn-primary btn-block btn-large">Log out</button>
-			</a>
-		</div>
-	</div>
+</div>
 </body>
+</html>
 </html>
 

@@ -17,8 +17,8 @@
 </div>
 <div class='mydiv'>
             <h1 align='center'>New cars</h1>
-    <form method='post' action="controller">
-        <input type="hidden" name="command" value="addCar"/>
+    <form method='post' action="addCar">
+        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
         Name: <input type='text' name='addName'   required='required'/>
         Price: <input type='text' name='addPrice'   required='required'/>
         Category: <input type='text' name='addCategory'   required='required'/>

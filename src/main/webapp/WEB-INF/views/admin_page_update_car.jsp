@@ -17,8 +17,8 @@
 </div>
 <div class='mydiv'>
     <h1 align='center'>Update car</h1>
-    <form method='post' action="controller">
-        <input type="hidden" name="command" value="adminUpdateCar"/>
+    <form method='post' action="updateCar">
+        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
         Name: <input type='text' name='updateNameCar'   value = ${car.name} >
         Price: <input type='text' name='updatePriceCar'   value = ${car.price} >
         Category: <input type='text' name='updateCategoryCar' value = ${car.category} >
