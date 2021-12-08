@@ -6,6 +6,9 @@ import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * Roles entity.
+ */
 
 @Entity(name = "roles")
 public class Roles implements Serializable {

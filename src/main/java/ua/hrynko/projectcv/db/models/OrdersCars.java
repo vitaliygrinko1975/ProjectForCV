@@ -3,6 +3,11 @@ package ua.hrynko.projectcv.db.models;
 import javax.persistence.*;
 import java.io.Serializable;
 
+/**
+ * Orders_cars entity.
+ */
+
+
 @Entity(name = "orders_cars")
 public class OrdersCars implements Serializable {
 

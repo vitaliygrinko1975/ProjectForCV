@@ -16,16 +16,20 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f6c9ae7-2371-465e-9052-8c5bc3f63227/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/dao/MySqlCarsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/dao/MySqlCarsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/controllers/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/controllers/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/dao/MySqlUsersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/dao/MySqlUsersDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/dao/interfaces/CarsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/dao/interfaces/CarsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin_page_users.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jspf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/head.jspf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jspf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list_menu.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/page.jspf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/settings.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/taglib.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/models/OrdersCars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/models/OrdersCars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/models/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hrynko/projectcv/db/models/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list_car_order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/client_list_car_order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list_cars_selected_by_class.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/logining_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/client_registration_page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/message.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/welcome.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +81,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -87,10 +91,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\РАБОТА\SoftServe\ProjectHibernateSpring\src" />
       <recent name="D:\РАБОТА\SoftServe\ProjectHibernateSpring\src\main\webapp\WEB-INF\views" />
       <recent name="D:\РАБОТА\SoftServe\ProjectHibernateSpring" />
       <recent name="D:\РАБОТА\SoftServe\ProjectHibernateSpring\src\main\resources" />
-      <recent name="D:\РАБОТА\SoftServe\ProjectHibernateSpring\src" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.52">
@@ -117,31 +121,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceImpTest.testGetById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceImpTest.testGetAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectForCV" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ua.hrynko.project.servise.*" />
+          <option name="PATTERN" value="ua.hrynko.progectcv.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ua.hrynko.project.servise" />
-      <option name="MAIN_CLASS_NAME" value="ua.hrynko.project.servise.UserServiceImpTest" />
+      <option name="PACKAGE_NAME" value="ua.hrynko.progectcv" />
+      <option name="MAIN_CLASS_NAME" value="ua.hrynko.progectcv.UserServiceImpTest" />
+      <option name="METHOD_NAME" value="testGetAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImpTest.testGetById (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectForCV" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.hrynko.progectcv.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.hrynko.progectcv" />
+      <option name="MAIN_CLASS_NAME" value="ua.hrynko.progectcv.UserServiceImpTest" />
       <option name="METHOD_NAME" value="testGetById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ua.hrynko.project.servise in ProjectForCV" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ua.hrynko.progectcv in ProjectForCV" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectForCV" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ua.hrynko.project.servise.*" />
+          <option name="PATTERN" value="ua.hrynko.progectcv.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ua.hrynko.project.servise" />
+      <option name="PACKAGE_NAME" value="ua.hrynko.progectcv" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -241,16 +261,18 @@
     <list>
       <item itemvalue="JUnit.All in ProjectForCV" />
       <item itemvalue="JUnit.UserServiceImpTest" />
-      <item itemvalue="JUnit.UserServiceImpTest.testGetById" />
-      <item itemvalue="JUnit.ua.hrynko.project.servise in ProjectForCV" />
+      <item itemvalue="JUnit.ua.hrynko.progectcv in ProjectForCV" />
+      <item itemvalue="JUnit.UserServiceImpTest.testGetById (1)" />
+      <item itemvalue="JUnit.UserServiceImpTest.testGetAll" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.52" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserServiceImpTest" />
-        <item itemvalue="JUnit.ua.hrynko.project.servise in ProjectForCV" />
+        <item itemvalue="JUnit.UserServiceImpTest.testGetAll" />
         <item itemvalue="JUnit.All in ProjectForCV" />
-        <item itemvalue="JUnit.UserServiceImpTest.testGetById" />
+        <item itemvalue="JUnit.UserServiceImpTest.testGetById (1)" />
+        <item itemvalue="JUnit.ua.hrynko.progectcv in ProjectForCV" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +323,21 @@
       <workItem from="1635401138928" duration="1038000" />
       <workItem from="1635501057612" duration="246000" />
       <workItem from="1635752393820" duration="6782000" />
-      <workItem from="1635764750050" duration="1429000" />
+      <workItem from="1635764750050" duration="2342000" />
+      <workItem from="1635849494130" duration="1031000" />
+      <workItem from="1636447036403" duration="4423000" />
+      <workItem from="1637671471381" duration="1227000" />
+      <workItem from="1638347190107" duration="1819000" />
+      <workItem from="1638426232163" duration="1997000" />
+      <workItem from="1638777312059" duration="974000" />
+      <workItem from="1638779350418" duration="601000" />
+      <workItem from="1638863545396" duration="1961000" />
+      <workItem from="1638945987554" duration="1434000" />
+      <workItem from="1638952457320" duration="3391000" />
+      <workItem from="1638956433886" duration="210000" />
+      <workItem from="1638956685586" duration="13162000" />
+      <workItem from="1638983198657" duration="709000" />
+      <workItem from="1638984976817" duration="8549000" />
     </task>
     <task id="LOCAL-00001" summary="initial 7">
       <created>1633977267644</created>
@@ -345,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635764781518</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="initial 11">
+      <created>1635766592032</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1635766592032</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,6 +399,12 @@
     <MESSAGE value="initial 8" />
     <MESSAGE value="initial 9" />
     <MESSAGE value="initial 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial 10" />
+    <MESSAGE value="initial 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial 11" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ProjectForCV$UserServiceImpTest_testGetAll.ic" NAME="UserServiceImpTest.testGetAll Coverage Results" MODIFIED="1638958605574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.hrynko.progectcv.*</FILTER>
+    </SUITE>
   </component>
 </project>

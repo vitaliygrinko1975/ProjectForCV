@@ -14,13 +14,13 @@
         </a>
     </div>
 </div>
-<div align='right'>
-    <div style="display: inline-block; padding-right: 50px;">
-        <a href="loginingPage">
-            <button class="btn btn-primary btn-block btn-large">REGISTRATION</button>
-        </a>
-    </div>
-</div>
+<%--<div align='right'>--%>
+<%--    <div style="display: inline-block; padding-right: 50px;">--%>
+<%--        <a href="registrationPage">--%>
+<%--            <button class="btn btn-primary btn-block btn-large">REGISTRATION</button>--%>
+<%--        </a>--%>
+<%--    </div>--%>
+<%--</div>--%>
 
 <h1 align='center'>Rent cars</h1>
 <div align='center'>

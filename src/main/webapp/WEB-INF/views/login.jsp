@@ -12,7 +12,7 @@
 
 <div align='right'>
     <div style="display: inline-block; padding-right: 50px;">
-        <a href="login?logout">
+        <a href="welcome">
             <button class="btn btn-primary btn-block btn-large">Log out</button>
         </a>
     </div>

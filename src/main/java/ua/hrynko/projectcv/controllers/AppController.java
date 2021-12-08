@@ -1,9 +1,6 @@
 package ua.hrynko.projectcv.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.security.core.GrantedAuthority;
-//import org.springframework.security.core.context.SecurityContextHolder;
-//import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -12,10 +9,10 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import ua.hrynko.projectcv.db.dao.MySqlCarsDAO;
+import ua.hrynko.projectcv.db.dao.MySqlUsersDAO;
 import ua.hrynko.projectcv.db.models.Cars;
 import ua.hrynko.projectcv.db.models.Roles;
 import ua.hrynko.projectcv.db.models.Users;
-import ua.hrynko.projectcv.servise.interfaces.RoleService;
 import ua.hrynko.projectcv.servise.interfaces.UserService;
 
 import java.util.Collection;
@@ -30,14 +27,15 @@ public class AppController {
     @Autowired
     private UserService userService;
 
-    @Autowired
-    private RoleService roleService;
 
     @Autowired
     private PasswordEncoder encoder;
 
     @Autowired
     private MySqlCarsDAO mySqlCarsDAO;
+
+    @Autowired
+    private MySqlUsersDAO mySqlUsersDAO;
 
 
     @RequestMapping(value = {"/", "welcome"}, method = {RequestMethod.GET})
@@ -50,10 +48,55 @@ public class AppController {
         return new ModelAndView("login");
     }
 
+    @GetMapping("/forRegistered")
+    public ModelAndView forRegistered() {
+        ModelAndView model = new ModelAndView();
+        if (hasRole("ROLE_ADMIN")) {
+            List<Cars> carsItems = mySqlCarsDAO.findCars();
+            model.addObject("carsItems", carsItems);
+            model.setViewName("admin_page");
+        } else if (hasRole("ROLE_USER")) {
+            List<Cars> carsItems = mySqlCarsDAO.findCars();
+            model.addObject("carsItems", carsItems);
+            model.setViewName("client_page_list_car");
+        } else {
+            model.setViewName("login");
+        }
+        return model;
+    }
 
-    @GetMapping("/loginingPage")
-    public ModelAndView loginingPage() {
-        return new ModelAndView("logining_page");
+
+    @GetMapping("/registrationPage")
+    public ModelAndView registration() {
+        return new ModelAndView("client_registration_page");
+    }
+
+    @PostMapping("/registrationUser")
+    public String registrationUser(@RequestParam("login") String login,
+                                   @RequestParam("password") String password,
+                                   @RequestParam("firstName") String firstName,
+                                   @RequestParam("lastName") String lastName,
+                                   ModelMap model) {
+
+        String message;
+        try {
+            Users user = new Users();
+            Roles role = new Roles();
+            role.setId(1);
+            user.setLogin(login);
+            if (!password.isEmpty()) {
+                user.setPassword(encoder.encode(password));
+            }
+            user.setFirstName(firstName);
+            user.setLastName(lastName);
+            user.setRole(role);
+            userService.save(user);
+            message = "The user has been registered";
+        } catch (Exception e) {
+            message = "The system could not registered user!";
+        }
+        model.addAttribute("message", message);
+        return "message";
     }
 
     @GetMapping("/adminPageUpdateCar")
@@ -143,22 +186,6 @@ public class AppController {
         return "message";
     }
 
-    @GetMapping("/forRegistered")
-    public ModelAndView forRegistered() {
-        ModelAndView model = new ModelAndView();
-        if (hasRole("ROLE_ADMIN")) {
-            List<Cars> carsItems = mySqlCarsDAO.findCars();
-            model.addObject("carsItems", carsItems);
-            model.setViewName("admin_page");
-        } else if (hasRole("ROLE_USER")) {
-            List<Cars> carsItems = mySqlCarsDAO.findCars();
-            model.addObject("carsItems", carsItems);
-            model.setViewName("client_page_list_car");
-        } else {
-            model.setViewName("login");
-        }
-        return model;
-    }
 
     @GetMapping("/sortedUpPrice")
     public ModelAndView sortedUpPrice() {
@@ -214,7 +241,7 @@ public class AppController {
     public String makeOrder(@RequestParam("makeOrderById") String makeOrderById,
                             ModelMap model) {
         model.addAttribute("car", mySqlCarsDAO.findCarToCarsDb(Integer.parseInt(makeOrderById)));
-        return "list_car_order";
+        return "client_list_car_order";
 
     }
 
@@ -236,20 +263,25 @@ public class AppController {
                               @RequestParam("addFirstNameAdmin") String firstName,
                               @RequestParam("addLastNameAdmin") String lastName,
                               ModelMap model) {
-        Users user = new Users();
-        Roles role = new Roles();
-        role.setId(1);
-        user.setLogin(login);
-        if (!password.isEmpty()) {
-            user.setPassword(encoder.encode(password));
+        String message;
+        try {
+            Users user = new Users();
+            Roles role = new Roles();
+            role.setId(1);
+            user.setLogin(login);
+            if (!password.isEmpty()) {
+                user.setPassword(encoder.encode(password));
+            }
+            user.setFirstName(firstName);
+            user.setLastName(lastName);
+            user.setRole(role);
+            userService.save(user);
+            message = "The admin has been added";
+        } catch (Exception e) {
+            message = "The system could not added admin!";
         }
-        user.setFirstName(firstName);
-        user.setLastName(lastName);
-        user.setRole(role);
-
-        userService.save(user);
-
-        return "admin_page";
+        model.addAttribute("message", message);
+        return "message";
     }
 
 

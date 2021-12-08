@@ -51,7 +51,7 @@ public class MySqlUsersDAO extends MySqlAbstractDAO<Users>  implements UserDAO {
         user.setPassword(password);
         user.setFirstName(firstName);
         user.setLastName(lastName);
-//        user.setRoleId(1);
+        user.setId(1);
         Session session = sessionFactory.getCurrentSession();
         Transaction t = session.getTransaction();
         t.begin();

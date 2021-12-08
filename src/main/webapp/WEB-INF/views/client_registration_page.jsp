@@ -15,14 +15,13 @@
 </div>
 <div class='mydiv'>
     <h1 align='center'>Sign up</h1>
-    <form method='post' action="creatingClients">
+    <form method='post' action="/registrationUser">
+        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
         Login: <input type='text' name='login' required='required'/>
         Password: <input type='text' name='password' required='required'/>
         Name: <input type='text' name='firstName' required='required'/>
         Surname: <input type='text' name='lastName' required='required'/>
-        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-        <button type='submit' name='userId' value='1' class='btn btn-primary btn-block btn-large'>CREATE
-        </button>
+        <button  class='btn btn-primary btn-block btn-large'>CREATE</button>
     </form>
 
 

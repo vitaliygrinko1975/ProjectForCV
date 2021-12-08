@@ -9,9 +9,9 @@
 <body>
 <div class='mydiv'>
 	<h1 align='center'>${message}</h1>
-	<form method='get' action='welcome'>
+	<form method='get' action='forRegistered'>
 		<button type='submit' class='btn btn-primary btn-block btn-large'>Return</button>
-		<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+<%--		<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>--%>
 	</form>
 
 </div>

@@ -9,7 +9,6 @@ import java.util.List;
 public interface CarsDAO extends AbstractDAO<Cars> {
 
 
-
      Cars findCarToCarsDb(int id);
 
 
