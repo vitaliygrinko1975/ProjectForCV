@@ -15,7 +15,7 @@
 </div>
 <div class='mydiv'>
     <h1 align='center'>Sign up</h1>
-    <form method='post' action="/registrationUser">
+    <form method='post' action="registrationUser">
         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
         Login: <input type='text' name='login' required='required'/>
         Password: <input type='text' name='password' required='required'/>

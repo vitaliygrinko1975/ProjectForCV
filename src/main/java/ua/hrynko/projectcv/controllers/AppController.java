@@ -34,8 +34,6 @@ public class AppController {
     @Autowired
     private MySqlCarsDAO mySqlCarsDAO;
 
-    @Autowired
-    private MySqlUsersDAO mySqlUsersDAO;
 
 
     @RequestMapping(value = {"/", "welcome"}, method = {RequestMethod.GET})
@@ -82,7 +80,7 @@ public class AppController {
         try {
             Users user = new Users();
             Roles role = new Roles();
-            role.setId(1);
+            role.setId(2);
             user.setLogin(login);
             if (!password.isEmpty()) {
                 user.setPassword(encoder.encode(password));
